@@ -1,0 +1,18 @@
+# Universal7880
+ro.hardware=samsungexynos7870
+ro.chipname=exynos7870
+ro.arch=exynos7870
+ro.boot.bootdevice=13540000.dwmmc0
+ro.lcd_min_brightness=0
+ro.lcd_brightness=120
+ro.sf.lcd_density=480
+persist.sys.usb.config=mtp,adb
+
+# Encryption
+#ro.sec.fle.encryption=true
+#security.mdpp=None
+security.mdpp.mass=skmm
+#security.mdpp.result=None
+#ro.security.mdpp.ver=2.0
+#ro.security.mdpp.release=8
+#ro.hardware.keystore=mdfpp
