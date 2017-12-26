@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
 # Offmode charger
 PRODUCT_PACKAGES += \
     charger_res_images \
-    cm_charger_res_images
+    charger
 
 # SELinux file contexts
 PRODUCT_COPY_FILES +=
