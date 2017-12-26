@@ -45,13 +45,19 @@ TARGET_2ND_CPU_VARIANT := generic
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
+BOARD_VENDOR := samsung
+
+# DTB
+#TARGET_DTBH_PLATFORM_CODE := 0x000050a6
+#TARGET_DTBH_SUBTYPE_CODE  := 0x217584da
+
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt $(LOCAL_PATH)/dtb.img
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
-BOARD_KERNEL_SEPARATED_DT := true
-TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+#BOARD_KERNEL_SEPARATED_DT := true
+#TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -60,7 +66,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 TARGET_KERNEL_SOURCE := kernel/samsung/j7y17lte
-TARGET_KERNEL_CONFIG := j7y17lte_eur_open_defconfig
+TARGET_KERNEL_CONFIG := j7y17ltem_00_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 33554432

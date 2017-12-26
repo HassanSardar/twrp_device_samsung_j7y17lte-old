@@ -20,8 +20,8 @@ LOCAL_PATH := device/samsung/j7y17lte
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Flat device tree for boot image
-PRODUCT_PACKAGES += \
-    dtbhtoolExynos
+#PRODUCT_PACKAGES += \
+#   dtbhtoolExynos
 
 # Ramdisk
 PRODUCT_PACKAGES += \
